@@ -10,6 +10,8 @@
 
    and, use dice loss.  
 
+   ------
+
    
 
 2. Keras Model
@@ -20,10 +22,14 @@
 
    2-1. Implemented using 'keras.utils.sequence' and 'fit_generator'
 
-   -> If you want to plot the validation results in running code, refer to [this content]([https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B02-(Sequence-&-fit_gernator)-%EC%A4%91%EA%B0%84%EA%B2%B0%EA%B3%BC%ED%99%95%EC%9D%B8/](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch생성하기2-(Sequence-&-fit_gernator)-중간결과확인/)
+   -> If you want to plot the validation results in running code, refer to [this content](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B02-(Sequence-&-fit_gernator)-%EC%A4%91%EA%B0%84%EA%B2%B0%EA%B3%BC%ED%99%95%EC%9D%B8/](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch생성하기2-(Sequence-&-fit_gernator)-중간결과확인/)  like below.
+
+   <center><img src="./06.png" width="70%"></center>
 
    2-2. Implemented using 'keras.utils.sequence' and 'train_on_batch'
    -> **It has memory overflow problem as training progresses**  
+
+   ------
 
    
 
@@ -37,24 +43,26 @@
 
   but,  **There are some noises in dataset so, you must refer to** [this link](https://github.com/sunshower76/Polyp-Segmentation/tree/master/data/DataPreProcessing) **and you must eliminate these noises**
 
-  
+    
 
 - Data Augmentation
 
   These datasets have a few number of images so, data augmentation should be needed
 
-  I used these open source.
+  I used these open source. [Augmentor](https://github.com/mdbloice/Augmentor)
 
-  <center>[Augmentor](https://github.com/mdbloice/Augmentor)</center>
-<center><img src="./01.png" width="70%"></center>
-  
+  <center><img src="./01.png" width="70%"></center>
+
+    
+
 - Pretrained backbone
 
   I use pretrained backbone with IMAGENET. In case of 'pytorch', I used  [PytorchHub](https://pytorch.org/docs/stable/hub.html) and case of 'keras' I used open source [segmentation models](https://github.com/qubvel/segmentation_models)
 
-  <center>[Segmentation models](https://github.com/qubvel/segmentation_models)</center>
-<center><img src="./02.png" width="70%"></center>
-  
+  <center><img src="./02.png" width="70%"></center>
+
+    
+
 - Results
   Pytorch models show low performance 'Unet + extraparts' show lowest performance and another model show similar performance to 'Resnet50 + U-net' that is implemented keras.
 

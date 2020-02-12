@@ -8,7 +8,9 @@
 
    1-2. Based on [this paper](https://arxiv.org/abs/1912.11947)(Colorectal Polyp Segmentation by U-Net with Dilation Convolution)
 
-   and, use dice loss.
+   and, use dice loss.  
+
+   
 
 2. Keras Model
 
@@ -21,7 +23,9 @@
    -> If you want to plot the validation results in running code, refer to [this content]([https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B02-(Sequence-&-fit_gernator)-%EC%A4%91%EA%B0%84%EA%B2%B0%EA%B3%BC%ED%99%95%EC%9D%B8/](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch생성하기2-(Sequence-&-fit_gernator)-중간결과확인/)
 
    2-2. Implemented using 'keras.utils.sequence' and 'train_on_batch'
-   -> **It has memory overflow problem as training progresses**
+   -> **It has memory overflow problem as training progresses**  
+
+   
 
 3. Informations
 
@@ -31,7 +35,7 @@
 
   [Endoscopic vision challenge](https://polyp.grand-challenge.org/Databases/), [CVC Colon dataset](http://mv.cvc.uab.es/projects/colon-qa/cvccolondb)
 
-  but, **There are some noises in dataset so, you must refer to [this link]() and you must eliminate these noises **
+  but,  **There are some noises in dataset so, you must refer to** [this link](https://github.com/sunshower76/Polyp-Segmentation/tree/master/data/DataPreProcessing) **and you must eliminate these noises**
 
   
 
@@ -41,15 +45,15 @@
 
   I used these open source.
 
-  <center>[**Augmentor**](https://github.com/mdbloice/Augmentor)</center>
-<center><img src="./01.png" width="60%"></center>
+  <center>[Augmentor](https://github.com/mdbloice/Augmentor)</center>
+<center><img src="./01.png" width="70%"></center>
   
 - Pretrained backbone
 
   I use pretrained backbone with IMAGENET. In case of 'pytorch', I used  [PytorchHub](https://pytorch.org/docs/stable/hub.html) and case of 'keras' I used open source [segmentation models](https://github.com/qubvel/segmentation_models)
 
-  <center>[**Segmentation models**](https://github.com/qubvel/segmentation_models)</center>
-<center><img src="./02.png" width="50%"></center>
+  <center>[Segmentation models](https://github.com/qubvel/segmentation_models)</center>
+<center><img src="./02.png" width="70%"></center>
   
 - Results
   Pytorch models show low performance 'Unet + extraparts' show lowest performance and another model show similar performance to 'Resnet50 + U-net' that is implemented keras.

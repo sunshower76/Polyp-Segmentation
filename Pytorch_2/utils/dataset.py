@@ -87,9 +87,6 @@ class BasicDataset(Dataset):
             p_mask = sample_p[1]
             augmented_mask = (p_mask//255)*255 #np.where(p_mask<=0, p_mask, 255)
 
-            kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-            mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
-
             q = Augmentor.DataPipeline([[p_img]])
             q.random_contrast(probability=0.3, min_factor=0.2, max_factor=1.0)  # low to High
             q.random_brightness(probability=0.3, min_factor=0.2, max_factor=1.0)  # dark to bright

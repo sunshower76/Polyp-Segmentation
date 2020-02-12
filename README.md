@@ -22,7 +22,7 @@
 
    2-1. Implemented using 'keras.utils.sequence' and 'fit_generator'
 
-   -> If you want to plot the validation results in running code, refer to [this content](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B02-(Sequence-&-fit_gernator)-%EC%A4%91%EA%B0%84%EA%B2%B0%EA%B3%BC%ED%99%95%EC%9D%B8/](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch생성하기2-(Sequence-&-fit_gernator)-중간결과확인/)  like below.
+   -> If you want to plot the validation results in running code, refer to [this content](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B02-(Sequence-&-fit_gernator)-%EC%A4%91%EA%B0%84%EA%B2%B0%EA%B3%BC%ED%99%95%EC%9D%B8/](https://sunshower76.github.io/frameworks/2020/02/09/Keras-Batch생성하기2-(Sequence-&-fit_gernator)-중간결과확인)  like below.
 
    <center><img src="./06.png" width="70%"></center>
 

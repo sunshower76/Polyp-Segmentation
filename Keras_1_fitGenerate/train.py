@@ -1,7 +1,8 @@
 import os
+"""
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = "6"
-
+"""
 from keras import optimizers
 from keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 import segmentation_models as sm
@@ -12,7 +13,7 @@ from dataset import DataGenerator
 
 if __name__ == '__main__':
     # hyperparameter
-    image_size = 384
+    image_size = 948
     train_path = '../data/train/imgs/'  # address of the dataset
     mask_path = '../data/train/masks/'
     epochs = 200  # number of time we need to train dataset
@@ -54,6 +55,9 @@ if __name__ == '__main__':
         metrics=[sm.metrics.iou_score],
     )
     #model.summary()
+    for layer in model.layers:
+        print(layer.name)
+
 
     callbacks = [
         EarlyStopping(patience=15, verbose=1),

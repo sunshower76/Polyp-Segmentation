@@ -19,7 +19,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Keras_1_fitGenerate" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
@@ -36,17 +36,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="551" key="FileChooserDialogImpl" timestamp="1581440264892">
+    <state x="384" y="321" key="FileChooserDialogImpl" timestamp="1581600556057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="551" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581440264892" />
+    <state x="384" y="321" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581600556057" />
     <state x="0" y="325" key="SettingsEditor" timestamp="1581440341582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="325" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581440341582" />
-    <state x="1067" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1581495773120">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="800" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1581600489312">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="800" y="371" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581600489312" />
     <state x="1067" y="371" key="com.intellij.ide.util.TipDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1581495773120" />
   </component>
 </project>
